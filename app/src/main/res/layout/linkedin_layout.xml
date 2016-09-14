@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@color/linkedin"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            style="@style/Button"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="@string/duplicate" />
+
+        <Button
+            style="@style/Button"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="@string/schedule" />
+
+        <Button
+            style="@style/Button"
+            android:text="@string/delete" />
+
+    </LinearLayout>
+</LinearLayout>
