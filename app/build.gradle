@@ -6,7 +6,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "anjithsasindran.materialsharingcard"
+        applicationId "hiteshsahu.materialvcard"
         minSdkVersion 21
         targetSdkVersion 24
         versionCode 1

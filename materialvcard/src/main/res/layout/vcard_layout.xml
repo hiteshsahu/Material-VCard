@@ -8,9 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         cardview:cardCornerRadius="@dimen/dimen_2dp"
-        cardview:cardElevation="@dimen/dimen_4dp"
         cardview:cardUseCompatPadding="true">
-
 
         <include
             android:id="@+id/baseview"
@@ -18,45 +16,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"></include>
 
-        <LinearLayout
-            android:id="@+id/linearView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="@color/twitter"
-            android:gravity="center_vertical"
-            android:orientation="vertical"
-            android:visibility="gone">
-
-            <LinearLayout
-                android:id="@+id/layoutButtons"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:orientation="vertical"
-                android:visibility="gone">
-
-                <Button
-                    style="@style/Button"
-                    android:layout_marginBottom="@dimen/activity_vertical_margin"
-                    android:text="duplicate" />
-
-                <Button
-                    style="@style/Button"
-                    android:layout_marginBottom="@dimen/activity_vertical_margin"
-                    android:text="schedule" />
-
-                <Button
-                    style="@style/Button"
-                    android:text="delete" />
-
-            </LinearLayout>
-        </LinearLayout>
-
         <include
-            android:id="@+id/linkedin_reveal"
-            layout="@layout/linkedin_layout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></include>
+            layout="@layout/demo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></include>
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -123,8 +86,6 @@
                 android:background="@drawable/behance_button"
                 android:elevation="@dimen/dimen_4dp"
                 android:src="@mipmap/behance" />
-
-
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 

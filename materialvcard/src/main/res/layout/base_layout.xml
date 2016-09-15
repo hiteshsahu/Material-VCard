@@ -8,6 +8,7 @@
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:layout_weight="2">
 
         <TextView
@@ -20,25 +21,32 @@
             android:textColor="@color/cardview_dark_background"
             android:textSize="25sp" />
 
-        <TextView
+        <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/heading"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim molestie ligula non dapibus. Vestibulum in molestie nibh. Vivamus ante ligula, semper non pellentesque in, aliquam at lacus. Aliquam commodo ultricies diam nec consequat. Fusce tortor ante, fermentum non efficitur ac, tempus ut erat. Aenean bibendum facilisis metus a pellentesque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            android:layout_below="@+id/heading">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="6"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim molestie ligula non dapibus. Vestibulum in molestie nibh. Vivamus ante ligula, semper non pellentesque in, aliquam at lacus. Aliquam commodo ultricies diam nec consequat. Fusce tortor ante, fermentum non efficitur ac, tempus ut erat. Aenean bibendum facilisis metus a pellentesque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
 Duis in vehicula neque. Duis aliquet porttitor rutrum. Phasellus iaculis nibh eu ante tincidunt, quis maximus nunc faucibus. Nullam ac semper eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer pellentesque massa metus, non congue felis interdum sit amet. Aliquam faucibus et mauris eget congue. Fusce nec mi libero.
 
 Sed placerat placerat diam, sed placerat orci euismod sed. Nullam efficitur lectus ac lectus porttitor, ac elementum libero volutpat. Phasellus sit amet ex ante. Etiam accumsan cursus sem nec pulvinar. Nulla odio lacus, lacinia ornare risus quis, scelerisque condimentum ipsum. Integer ex elit, consequat ut arcu in, feugiat varius lacus. Suspendisse potenti. Sed et vehicula sapien. Vestibulum dapibus molestie sollicitudin.
 
 Sed eu nunc vitae diam maximus varius sed blandit tellus. Proin porttitor dui orci, at vehicula orci malesuada ultrices. Nunc volutpat, lorem eget sollicitudin maximus, dui mauris molestie sem, id dictum felis nisl nec augue. Morbi vel urna scelerisque, tincidunt nisi sed, molestie ex. Nunc sodales efficitur leo, vitae facilisis nulla ullamcorper a. Curabitur cursus diam est, eu convallis dolor posuere vitae. Cras id eros id neque mollis hendrerit eget ut tortor. Duis ut dapibus diam. Sed ullamcorper felis id orci dignissim, in pharetra nibh rhoncus. Ut rutrum molestie lacinia. Vivamus nec sapien ut massa mattis rutrum. Sed vitae ornare diam. Phasellus fermentum pellentesque pharetra."
-            android:textColor="@color/cardview_dark_background"
-            android:textSize="17sp" />
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="17sp" />
+        </ScrollView>
     </RelativeLayout>
 
 
     <ImageView
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_margin="20dp"
         android:layout_weight="1"
         android:src="@drawable/test_img" />
 

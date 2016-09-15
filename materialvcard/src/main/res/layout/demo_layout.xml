@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reveal_view_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/nav_back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/reveal_view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/demo_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="20dp"
+                android:text="Hello \n World"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/demo_heading"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim molestie ligula non dapibus. Vestibulum in molestie nibh. Vivamus ante ligula, semper non pellentesque in, aliquam at lacus. "
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/see_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/intro"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_white_background"
+                android:padding="5dp"
+                android:text="see more"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/demo_slide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:minHeight="200dp" />
+    </LinearLayout>
+</FrameLayout>
