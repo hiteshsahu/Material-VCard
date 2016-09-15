@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Material-VCard.iml" filepath="$PROJECT_DIR$/Material-VCard.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/materialvcard/materialvcard.iml" filepath="$PROJECT_DIR$/materialvcard/materialvcard.iml" />
     </modules>
   </component>
 </project>

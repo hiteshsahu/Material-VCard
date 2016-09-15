@@ -7,6 +7,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://C:/Productivity/android-sdks/extras/android/m2repository/com/android/support/cardview-v7/24.2.0/cardview-v7-24.2.0-sources.jar!/" />
+      <root url="jar://C:/Productivity/android-sdks/extras/android/m2repository/com/android/support/cardview-v7/24.2.0/cardview-v7-24.2.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

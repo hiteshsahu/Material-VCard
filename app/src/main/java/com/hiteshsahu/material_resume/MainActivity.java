@@ -1,33 +1,25 @@
 package com.hiteshsahu.material_resume;
 
-import android.animation.Animator;
-import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
-import android.view.ViewAnimationUtils;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.FrameLayout;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
+import android.support.v7.app.AppCompatActivity;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
-    View baseLayout;
-    ImageButton twitter;
-    LinearLayout revealView, layoutButtons;
-    Animation alphaAnimation;
-    float pixelDensity;
-    boolean flag = true;
-    private ImageButton linkedin;
-    private LinearLayout linkedinRevealView;
+//    View baseLayout;
+//    ImageButton twitter;
+//    LinearLayout revealView, layoutButtons;
+//    Animation alphaAnimation;
+//    float pixelDensity;
+//    boolean flag = true;
+//    private ImageButton linkedin;
+//    private LinearLayout linkedinRevealView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        pixelDensity = getResources().getDisplayMetrics().density;
+       /* pixelDensity = getResources().getDisplayMetrics().density;
 
         baseLayout = (View) findViewById(R.id.imageView);
         twitter = (ImageButton) findViewById(R.id.twitter);
@@ -39,12 +31,12 @@ public class MainActivity extends Activity {
         alphaAnimation = AnimationUtils.loadAnimation(this, R.anim.alpha_anim);
     }
 
-    public void launchTwitter(View view) {
+ /*   public void launchTwitter(View view) {
 
-        /*
+        *//*
          MARGIN_RIGHT = 16;
          FAB_BUTTON_RADIUS = 28;
-         */
+         *//*
         int x = baseLayout.getLeft();
         int y = baseLayout.getBottom();
         x += ((28 * pixelDensity) + (16 * pixelDensity));
@@ -131,10 +123,10 @@ public class MainActivity extends Activity {
 
     public void launchLinkedin(View view) {
 
-        /*
+        *//*
          MARGIN_RIGHT = 16;
          FAB_BUTTON_RADIUS = 28;
-         */
+         *//*
         int x = baseLayout.getLeft();
         int y = baseLayout.getBottom();
         x += ((28 * pixelDensity) + (16 * pixelDensity));
@@ -216,6 +208,7 @@ public class MainActivity extends Activity {
             anim.start();
             flag = true;
         }
-    }
+    }*/
 
+    }
 }

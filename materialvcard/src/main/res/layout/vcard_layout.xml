@@ -1,0 +1,136 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardCornerRadius="@dimen/dimen_2dp"
+        cardview:cardElevation="@dimen/dimen_4dp"
+        cardview:cardUseCompatPadding="true">
+
+
+        <include
+            android:id="@+id/baseview"
+            layout="@layout/base_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></include>
+
+        <LinearLayout
+            android:id="@+id/linearView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/twitter"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/layoutButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    style="@style/Button"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="duplicate" />
+
+                <Button
+                    style="@style/Button"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="schedule" />
+
+                <Button
+                    style="@style/Button"
+                    android:text="delete" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/linkedin_reveal"
+            layout="@layout/linkedin_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></include>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="30dp">
+
+            <ImageButton
+                android:id="@+id/twitter"
+                android:layout_width="@dimen/dimen_56dp"
+                android:layout_height="@dimen/dimen_56dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:adjustViewBounds="true"
+                android:background="@drawable/twitter_button"
+                android:src="@mipmap/twitter_logo" />
+
+
+            <ImageButton
+                android:id="@+id/linkedin"
+                android:layout_width="@dimen/dimen_56dp"
+                android:layout_height="@dimen/dimen_56dp"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:layout_toRightOf="@+id/twitter"
+                android:adjustViewBounds="true"
+                android:background="@drawable/linkedin_button"
+                android:elevation="@dimen/dimen_4dp"
+                android:src="@mipmap/linkedin" />
+
+            <ImageButton
+                android:id="@+id/github"
+                android:layout_width="@dimen/dimen_56dp"
+                android:layout_height="@dimen/dimen_56dp"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:layout_toRightOf="@+id/linkedin"
+                android:adjustViewBounds="true"
+                android:background="@drawable/github_button"
+                android:elevation="@dimen/dimen_4dp"
+                android:src="@mipmap/github" />
+
+
+            <ImageButton
+                android:id="@+id/dribble"
+                android:layout_width="@dimen/dimen_56dp"
+                android:layout_height="@dimen/dimen_56dp"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:layout_toRightOf="@+id/github"
+                android:adjustViewBounds="true"
+                android:background="@drawable/dribble_button"
+                android:elevation="@dimen/dimen_4dp"
+                android:src="@mipmap/dribble" />
+
+            <ImageButton
+                android:id="@+id/behance"
+                android:layout_width="@dimen/dimen_56dp"
+                android:layout_height="@dimen/dimen_56dp"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:layout_toRightOf="@+id/dribble"
+                android:adjustViewBounds="true"
+                android:background="@drawable/behance_button"
+                android:elevation="@dimen/dimen_4dp"
+                android:src="@mipmap/behance" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+

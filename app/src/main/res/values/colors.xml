@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorPrimary">#F44336</color>
-    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorPrimary">#EEEEEE</color>
+    <color name="colorPrimaryDark">#BEBEBE</color>
 
     <color name="grey">#BEBEBE</color>
 
-    <color name="twitter">#23C4FF</color>
-    <color name="linkedin">#0077b5</color>
-    <color name="dribble">#ea4c89</color>
-    <color name="behance">#1769ff</color>
-    <color name="github">#4183c4</color>
 
-    <color name="pinterest">#bd081c</color>
-    <color name="deviant_art">#05cc47</color>
-
-
+    <!--Other colors-->
     <color name="white">#FFFFFF</color>
 
 </resources>

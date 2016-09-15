@@ -18,16 +18,16 @@
         <Button
             style="@style/Button"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:text="@string/duplicate" />
+            android:text="duplicate" />
 
         <Button
             style="@style/Button"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:text="@string/schedule" />
+            android:text="schedule" />
 
         <Button
             style="@style/Button"
-            android:text="@string/delete" />
+            android:text="delete" />
 
     </LinearLayout>
 </LinearLayout>
